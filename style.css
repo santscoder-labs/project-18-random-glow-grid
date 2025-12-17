@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 22px;
+    height: 22px;
+    background: #111;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.cell.active {
+    background: red;
+    box-shadow: 0 0 12px red;
+}
